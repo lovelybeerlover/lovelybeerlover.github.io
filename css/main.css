@@ -80,6 +80,10 @@ textarea {
     resize: vertical;
 }
 
+@font-face {
+    font-family: 'socialico';
+    src: url("fonts/Socialico.ttf")  format('truetype');
+}
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -94,17 +98,103 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a:link, a:visited {
+    color: inherit;
+}
+
+
+
+li{
+    list-style: none;
+    float: left;
+}
+
 
 body{
     background-color: #fff;
+
 }
 
-.button1 {
+.nav-menu {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-menu li{
+     margin-right: 20px;
+}
+
+.right-nav{
+    position: fixed;
+    right: 3%;
+}
+.modal{
+    display: none; 
+    width: 100%; 
+    height: 100%;
+}
+
+.modal-window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 11;
+    
+}
+
+.modal-content{
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto; 
+    background: #fff;
+    z-index: 12;
+    /*position: fixed;*/
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
+
+.bio{
+    width: 50%;
+    height: 90%;
+    margin: auto auto;
+    right: 0;
     position: absolute;
-    right: 200px;
-    bottom: 45%;
+
 }
 
+.social_icons{
+    z-index: 1;
+    font: 3em 'Socialico', sans-serif ;
+    color: #333;
+}
+
+
+.btn{
+    margin: 340px 0 0 70%; 
+
+    background-color: rgba(255, 255, 255, 0);
+    border : 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font: lighter 20px 'open sans', sans-serif;
+
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
+}
 
 /*.parallax-window {
     min-height: 400px;
