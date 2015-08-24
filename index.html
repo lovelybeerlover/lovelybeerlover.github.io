@@ -14,95 +14,77 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/parallax.min.js"></script>
     </head>
     <body>
-
-    	<div class="ham">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="bio" id="#home">
+            <div class="title">DESIGNER
+                <p style="margin:0; font-size:20px; letter-spacing:0;"> with Multiple Hats</p>
+                <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COOMING SOON</button>
             </div>
+        </div>
+
     	<div class="nav-menu">
     		<ul class="">
-    			<a href="#content1"> <li><H3 style="margin:0;">MIN KIM</H3></li></a>
+    			<a href="#home"><li><h3 style="margin:0;">MIN KIM</h3></li></a>
     			<div class="right-nav">
-    			<a href="#content1"> <li>ABOUT</li></a>
-    			<a href="#content2"><li>UI</li></a>
-    			<a href="#content3"><li>UX</li></a>
-    			<a href="#content4"><li>GRAPHIC DESIGN</li></a>
+    			<li><button onclick="aboutmeModal();" style="background:none; border:none;">ABOUT</button></li>
+    			<li><button onclick="contactModal();" style="background:none; border:none;">CONTACT</button></li>
+    		<!-- 	<a href="#content3"><li></li></a>
+    			<a href="#content4"><li></li></a> -->
     			</div>
     		</ul>
     	</div>
 
-    	<div class="modal-window">
+       <!--  <div class="content">
+        </div>
+ -->
+    	<div class="modal-window" id="aboutme">
     		<div class="modal-content">
     			<button onclick="close()" class="close" value="X">X</button>
-    				<p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    				<h3>ABOUT ME</h3>
+                    <p>
+                    I am an interaction design professional with a year of experience spanning UI/UX Design,Web Design, Front-End Development and Graphic Design. 
+                    <br>
+                    <br>
+                    I specialize in developing user interfaces and experiences on mobile devices, to full size desktops in order to provide an optimal experience to users. I am proficient in the Adobe Creative Suite of programs, including Illustrator, Photoshop and AfterEffects. I also have solid skills in HTML5, CSS, jQuery and JavaScript.
+                    <br>
+                    <br>
+                    In my most recent project as a freelancer front-end developer, I iterated effective responsive design solutions for a non-responsive web application and re-designed user interfaces through wireframes and prototypes. I successfully delivered HTML5, CSS3 and jQuery front-end code. I hope to continue my growth from being a code-savvy designer to a full front-end developer with a great understanding of design elements. 
+                    <br> 
+                    <br>  
+                    At <a href="https://postbeyond.com/">PostBeyond</a>, I wear multiple hats on. As a graphic desginer, I creat visual assets for our marketing team and sale team. As a UI designer, I suggest UI and better UX for our prodect and visualize it with our development team.
+                    Also, as web designer, I manage and design our website with our marketing team. 
+                    <br>
+                    <br>
+                    I design/develop things to help people to get things done. Let's build something awesome together! 
+
+                    <div class="social_icons">
+                        <ul class="social_icons">
+                            <a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
+                            <a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
+                            <a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
+                        </ul>
+                    </div>
+                    </p>
+                
     		</div>
     	</div>
-        
-	    <div id="content1" class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/bio.jpg" data-natural-width="1400" data-natural-height="900" style="height: 700px;">
-	    	<div class="bio" >
-    			<p>Hello</p>
-    			<p>I am Min, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    		<div class="social_icons">
-	    			<ul>
-	    				<a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
-	    				<a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
-	    				<a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
-	    			</ul>
-	    		</div>
-	    	</div>
-	    	<!-- <div><input type="button" value="VIEW PROJECT" class="btn" onclick="detailModal()"></div> -->
-	    </div>
 
-	    <div id="content2" class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/bookstore_logo.jpg" data-natural-width="750" data-natural-height="763" style="height: 700px;">
-	    	<div><input type="button" value="VIEW PROJECT" class="btn" onclick="detailModal()"></div>
-	    </div>
-
-	    <div id="content3" class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/bookstore_logo.jpg" data-natural-width="750" data-natural-height="763" style="height: 700px;">	
-	    	<div><input type="button" value="VIEW PROJECT" class="btn" onclick="detailModal()"></div>
-	    </div>
-
-	    <div id="content4" class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/bookstore_logo.jpg" data-natural-width="750" data-natural-height="763" style="height: 700px;">	
-	    	<div><input type="button" value="VIEW PROJECT" class="btn" onclick="detailModal()"></div>
-	    </div>
+        <div class="modal-window" id="contact">
+            <div class="modal-content">
+                <button onclick="close()" class="close" value="X">X</button>
+                    <h3>YOU CAN FINE ME HERE</h3>
+                    <div class="social_icons">
+                        <ul class="social_icons">
+                            <a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
+                            <a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
+                            <a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
+                        </ul>
+                    </div>
+                    </p>
+                
+            </div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
