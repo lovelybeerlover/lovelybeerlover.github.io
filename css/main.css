@@ -141,6 +141,7 @@ body{
 .social_icons{
     font: 50px 'Socialico', sans-serif ;
     color: #333;
+    margin-right: 10px;
 }
  
 .nav-menu {
