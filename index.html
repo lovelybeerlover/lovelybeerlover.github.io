@@ -22,7 +22,9 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script src="js/typed.js"></script>
+       
 
 
 
@@ -34,6 +36,14 @@
             $('#fullpage').fullpage();
         });
     </script>
+    <script>
+        $(function(){
+            $(".element").typed({
+                strings: ["UI/UX Designer","Vsiual Designer", "Front-End Developer"],
+                typeSpeed: 50
+            });
+        });
+    </script>
 
 
 
@@ -41,8 +51,9 @@
     <div id="fullpage">
         <div class="section" style="background-image: url('img/bg1.jpg');  background-size: cover;">
             <div class="bio" id="#home">
-                <div class="title">🎩 <br> DESIGNER
-                    <p style="margin:0; font-size:20px; letter-spacing:0;"> with Multiple Hats</p>
+                <div class="title">Hi, I'm Min<br>
+                <span class="element"></span>   
+                    <p style="margin:10px 0 0 0; font-size:20px; letter-spacing:0;">based out of Toronto, Canada </p>
                     <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COMING SOON</button>
                 </div>
             </div>
