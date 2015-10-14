@@ -51,8 +51,7 @@
     <div id="fullpage">
         <div class="section" style="background-image: url('img/bg1.jpg');  background-size: cover;">
             <div class="bio" id="#home">
-                <div class="title" style="font-size:30px; letter-spacing:0; padding-top:250px;">Hi, I'm Min, <br>
-                a <span class="element" style="font-size: 30px;"></span>   
+                <div class="title" style="font-size:30px; letter-spacing:0; padding-top:250px;">Hi👋 <br> I'm Min, a <span class="element" style="font-size: 30px;"></span>   
                     <p style="margin:0; font-size:25px; letter-spacing:0;">based out of Toronto, Canada </p>
                     <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COMING SOON</button>
                 </div>
@@ -78,19 +77,27 @@
 
     	<div class="nav-menu">
     		<ul class="">
-    			<a href="#home"><li><h3 style="margin:0;">MIN KIM</h3></li></a>
-    			<div class="right-nav">
-    			<li><button onclick="aboutmeModal();" style="background:none; border:none;">ABOUT</button></li>
-    			<li><button onclick="contactModal();" style="background:none; border:none;">CONTACT</button></li>
-    		<!-- 	<a href="#content3"><li></li></a>
-    			<a href="#content4"><li></li></a> -->
+    			<a href="#home"><li style="position:fixed;left:3%;"><h3 style="margin:0;">MIN KIM</h3></li></a>
+    			<div class="right-nav" style="position:fixed;right:1%;">
+                    <!-- <li><button onclick="aboutmeModal();" style="background:none; border:none;">WORK</button></li> -->
+        			<!-- <li><button onclick="aboutmeModal();" style="background:none; border:none;">ABOUT</button></li> -->
+        			<li><button onclick="contactModal();" style="background:none; border:none;">CONTACT</button></li>
     			</div>
     		</ul>
     	</div>
+        <!-- snowball -->
+         <!-- <div class="circle"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Share</a></li>
+                    <li><a href="">Activity</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>       -->                
+        <!-- snowball end -->
 
-       <!--  <div class="content">
-        </div>
- -->
     	<div class="modal-window" id="aboutme">
     		<div class="modal-content">
     			<button onclick="close()" class="close" value="X">X</button>
@@ -111,12 +118,11 @@
                     <br>
                     I design/develop things to help people to get things done. Let's build something awesome together! 
 
-                
-                        <ul class="social_icons">
-                            <a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
-                            <a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
-                            <a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
-                        </ul>
+                        <center>
+                            <a href="https://dribbble.com/thisisminkim">Dribble</a> 
+                            <a href="https://twitter.com/lovelybeerlover">Twitter</a>
+                            <a href="https://ca.linkedin.com/in/thisisminkim">Linkedin</a>
+                        </center>
                     </p>
                 
     		</div>
@@ -125,17 +131,31 @@
         <div class="modal-window" id="contact">
             <div class="modal-content">
                 <button onclick="close()" class="close" value="X">X</button>
-                    <h3 style="text-align:center;">YOU CAN FIND ME HERE</h3>
+                    <h4 style="text-align:center;">YOU CAN FIND ME HERE</h4>
                     <br>
+                        <!-- <center>
                         <ul style="text-align:center;" class="social_icons">
                             <a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
                             <a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
                             <a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
                         </ul>
-                        <br>
-                        <br>
-                        <H3>or</H3>
-                        <a href="mailto:minkim0110@gmail.com">minkim0110@gmail.com</a>
+                        </center> -->
+                            <div style="margin:10px 0">
+                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#ea4c89;color:#fff;" href="https://dribbble.com/thisisminkim">Dribble</a> 
+                            </div>
+                    
+                            <div style="margin:10px 0">
+                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#55acee;color:#fff;" href="https://twitter.com/lovelybeerlover">Twitter</a> 
+                            </div>
+                         
+                            <div style="margin:10px 0">
+                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#0077b5;color:#fff;" href="https://ca.linkedin.com/in/thisisminkim">Linkedin</a>
+                            </div>
+
+                
+                        <div style="margin:10px 0">
+                        <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#F78181;color:#fff;" href="mailto:minkim0110@gmail.com">Mail Me</a>
+                        </div>
             
                     </p>
                 
