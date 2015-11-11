@@ -3,6 +3,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/typed.js"></script>
     <script src="http://unslider.com/unslider.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -127,7 +128,7 @@
     max-width: 1024px;
 }
 
-.btn1, .btn2, .btn3, .btn4, .btn5{
+.btn, .btn1, .btn2, .btn3, .btn4, .btn5{
     /*margin-top: 60px; */
     background-color: rgba(255, 255, 255, 0);
     border : 3px solid #fff;
@@ -136,12 +137,42 @@
     font: 20px 'open sans', sans-serif;
 }
 
+.btn{
+    margin: 5px;
+}
+
+.title{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #363644;
+    font-size:30px; 
+    letter-spacing:0; 
+    padding-top:250px;
+}
+
 </style>
 </head>
 <body>
 
     <div class="banner">
         <ul>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project"  style="background-image:url('img/me.jpg')">
+                            <div class="title">Hi<br> I'm Min, a <span class="element" style="font-size: 30px;"></span>   
+                            <p style="margin:0; font-size:25px; letter-spacing:0;">based out of Toronto, Canada </p>
+                            </div>
+                            <div class="">
+                                <button class="btn" href="https://www.linkedin.com/profile/view?id=262046646&trk=nav_responsive_tab_profile_pic">Linkedin</button>
+                                <button class="btn" href="https://dribbble.com/thisisminkim">Dribble</button>
+                                <button class="btn" href="https://twitter.com/lovelybeerlover">Twitter</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li>
                 <div id="slider">
                     <div class="slider-wrap">
@@ -172,7 +203,7 @@
             <li>
                 <div id="slider">
                     <div class="slider-wrap">
-                        <div class="single-project" style="background:linear-gradient(20deg, #B8CAE6, #589ced 25%, #4875B4)">
+                        <div class="single-project" style="background:linear-gradient(20deg,#efefef, #589ced 25%, #707070)">
                             <button class="btn2">PostBeyond X Visual Design
                             </button>   
                         </div>
@@ -189,7 +220,7 @@
                                         
                                         <hr>
                                         <div class="img">
-                                            <img src="img/wee/1.jpg">
+                                            <img src="img/me.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -217,7 +248,7 @@
                                         
                                         <hr>
                                         <div class="img">
-                                            <img src="img/wee/1.jpg">
+                                            <img src="img/PBp/4.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -300,6 +331,11 @@
 
 <script>
     $(document).ready(function(){
+        $(".element").typed({
+            strings: ["UI/UX Designer", "Visual Designer", "Web Developer"],
+            typeSpeed: 70
+        });
+
         $('.banner').unslider({
             speed: 500,               //  The speed to animate each slide (in milliseconds)
             delay: false,              //  The delay between slide animations (in milliseconds)
