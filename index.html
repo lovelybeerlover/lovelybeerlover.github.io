@@ -1,179 +1,359 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://unslider.com/unslider.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-<!--         <link rel="favicon" href="favicon.ico"> -->
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: 'open sans', sans-serif;
+    }
+    .banner {
+        position: relative;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .banner ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    .banner li{
+    padding: 0px;
+    margin: 0px;
+    }
+    .banner ul li {
+        float:left;
+        padding: 0px;
+        margin: 0px;
+        min-height: 200px;
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        -ms-background-size: 100% auto;
+        background-size: 100% auto;
+        background-position-y: -75px;
+    }
+    .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  text-align: center;
+}
 
-        <!-- Place favicon.ico in the root directory -->
+.dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .6;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!-- fullpage.js -->
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+.dots li.active {
+  background: #fff;
+  opacity: 1;
+}
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+.single-project{
+    background-size: cover;
+    min-height: 300px;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
 
+.single-project:nth-of-type(2){
+    background-image: url('img/bg2.jpeg');
+}
 
-        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-        <script src="js/typed.js"></script>
-       
+.project-detail1, .project-detail2, .project-detail3, .project-detail4, .project-detail5{
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    overflow: scroll;
+}
 
+*.wrap{
+    margin: 21% auto;
+    width: 100%;
+    background: #fff;
+}
 
-    </head>
-    <!-- I love you ;) -->
-    <body>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage();
-        });
-    </script>
-    <script>
-        $(function(){
-            $(".element").typed({
-                strings: ["UI/UX Designer","Visual Designer", "Front-End Developer","UI/UX Designer","Visual Designer", "Front-End Developer","UI/UX Designer","Visual Designer", "Front-End Developer"],
-                typeSpeed: 70
-            });
-        });
-    </script>
+*.inner{
+    width: 60%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
 
+*.img{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1024px;
+}
 
+*.img img{
+    width: 100%;
+    max-width: 1024px;
+}
 
-    <!-- fullpage.js -->
-    <div id="fullpage">
-        <div class="section" style="background-image: url('img/bg1.jpg');  background-size: cover;">
-            <div class="bio" id="#home">
-                <div class="title" style="font-size:30px; letter-spacing:0; padding-top:250px;">Hi👋 <br> I'm Min, a <span class="element" style="font-size: 30px;"></span>   
-                    <p style="margin:0; font-size:25px; letter-spacing:0;">based out of Toronto, Canada </p>
-                    <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COMING SOON</button>
-                </div>
-            </div>
-        </div>
-        <div class="section" style="background-image: url('img/bg2.jpeg');  background-size: cover;">
-            <div class="title">
-            <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COOMING SOON</button>
-            </div>
-        </div>
-         <div class="section" style="background-image: url('img/bg3.jpeg');  background-size: cover;">
-            <div class="title">
-            <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COOMING SOON</button>
-            </div>
-        </div>
-         <div class="section" style="background-image: url('img/bg4.jpeg');  background-size: cover;">
-            <div class="title">
-            <button class="btn" onclick="location.href='https://dribbble.com/thisisminkim'">COOMING SOON</button>
-            </div>
-        </div>
-    </div>
-    <!-- fullpage.js end -->
+.btn1, .btn2, .btn3, .btn4, .btn5{
+    /*margin-top: 60px; */
+    background-color: rgba(255, 255, 255, 0);
+    border : 3px solid #fff;
+    color: #fff;
+    padding: 15px 20px;
+    font: 20px 'open sans', sans-serif;
+}
 
-    	<div class="nav-menu">
-    		<ul class="">
-    			<a href="#home"><li style="position:fixed;left:3%;"><h3 style="margin:0;">MIN KIM</h3></li></a>
-    			<div class="right-nav" style="position:fixed;right:1%;">
-                    <!-- <li><button onclick="aboutmeModal();" style="background:none; border:none;">WORK</button></li> -->
-        			<!-- <li><button onclick="aboutmeModal();" style="background:none; border:none;">ABOUT</button></li> -->
-        			<li><button onclick="contactModal();" style="background:none; border:none;">CONTACT</button></li>
-    			</div>
-    		</ul>
-    	</div>
-        <!-- snowball -->
-         <!-- <div class="circle"></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Share</a></li>
-                    <li><a href="">Activity</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>       -->                
-        <!-- snowball end -->
+</style>
+</head>
+<body>
 
-    	<div class="modal-window" id="aboutme">
-    		<div class="modal-content">
-    			<button onclick="close()" class="close" value="X">X</button>
-    				<h3 style="text-align:center;" >ABOUT ME</h3>
-
-                    <p>
-                    I am an interaction design professional with a year of experience spanning UI/UX Design, Web Design, Front-End Development and Graphic Design.  
-                    <br>
-                    <br>
-                    I specialize in developing user interfaces and experiences on mobile devices, to full-size desktops in order to provide an optimal experience to users. I am proficient in the Adobe Creative Suite of programs, including Illustrator, Photoshop and AfterEffects. I also have solid skills in HTML5, CSS, jQuery and JavaScript.
-                    <br>
-                    <br>
-                    In my most recent project as a freelance front-end developer, I iterated effective responsive design solutions for a non-responsive web application and re-designed user interfaces through wireframes and prototypes. I successfully delivered HTML5, CSS3 and jQuery front-end code. I hope to continue my growth from being a code-savvy designer to a full front-end developer with a great understanding of design elements. 
-                    <br> 
-                    <br>  
-                    At <a href="https://postbeyond.com/">PostBeyond</a>, I wear multiple hats on. As a graphic designer, I create visual assets for our marketing team and sale team. As a UI designer, I suggest UI and better UX for our product and visualize it with our development team. Also, as a web designer, I manage and design our website with our marketing team. 
-                    <br>
-                    <br>
-                    I design/develop things to help people to get things done. Let's build something awesome together! 
-
-                        <center>
-                            <a href="https://dribbble.com/thisisminkim">Dribble</a> 
-                            <a href="https://twitter.com/lovelybeerlover">Twitter</a>
-                            <a href="https://ca.linkedin.com/in/thisisminkim">Linkedin</a>
-                        </center>
-                    </p>
-                
-    		</div>
-    	</div>
-
-        <div class="modal-window" id="contact">
-            <div class="modal-content">
-                <button onclick="close()" class="close" value="X">X</button>
-                    <h4 style="text-align:center;">YOU CAN FIND ME HERE</h4>
-                    <br>
-                        <!-- <center>
-                        <ul style="text-align:center;" class="social_icons">
-                            <a href="https://dribbble.com/thisisminkim"><li>d</li></a> 
-                            <a href="https://twitter.com/lovelybeerlover"><li>l</li></a>
-                            <a href="https://ca.linkedin.com/in/thisisminkim"><li>i</li></a>
-                        </ul>
-                        </center> -->
-                            <div style="margin:10px 0">
-                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#ea4c89;color:#fff;" href="https://dribbble.com/thisisminkim">Dribble</a> 
-                            </div>
-                    
-                            <div style="margin:10px 0">
-                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#55acee;color:#fff;" href="https://twitter.com/lovelybeerlover">Twitter</a> 
-                            </div>
-                         
-                            <div style="margin:10px 0">
-                            <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#0077b5;color:#fff;" href="https://ca.linkedin.com/in/thisisminkim">Linkedin</a>
-                            </div>
-
-                
-                        <div style="margin:10px 0">
-                        <a style="margin:20px 0;padding:2px 5px;border-radius:5px;background-color:#F78181;color:#fff;" href="mailto:minkim0110@gmail.com">Mail Me</a>
+    <div class="banner">
+        <ul>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project" style="background:linear-gradient(20deg,#F4AC38, #BD5F32 25%, #545554)">
+                            <button class="btn1"><span>ClauseHound X Front End Dev</span>
+                            </button>   
                         </div>
-            
-                    </p>
-                
-            </div>
-        </div>
+                        <div class="project-detail1">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <h3>Brief</h3>
+                                        <p>Tasked with converting a non-responsive web application to a new, responsive design optimized for mobile usage.
+                                        
+                                        </p>
+                                        
+                                        <hr>
+                                        <div class="img">
+                                            <!-- <img src="img/CH/1.jpg"> -->
+                                            <img src="img/CH/2.jpg">
+                                            <img src="img/CH/3.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project" style="background:linear-gradient(20deg, #B8CAE6, #589ced 25%, #4875B4)">
+                            <button class="btn2">PostBeyond X Visual Design
+                            </button>   
+                        </div>
+                        <div class="project-detail2">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <h3>Brief</h3>
+                                        <p>5.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        
+                                        <hr>
+                                        <div class="img">
+                                            <img src="img/wee/1.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project" style="background:linear-gradient(20deg, #6fe3e7, #4fb8d9 25%, #5648c1)">
+                            <button class="btn3">PostBeyond X Product Design
+                            </button>   
+                        </div>
+                        <div class="project-detail3">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <h3>Brief</h3>
+                                        <p>5.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        
+                                        <hr>
+                                        <div class="img">
+                                            <img src="img/wee/1.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project" style="background:linear-gradient(20deg, #F7F7F7, #54C5D0 25%, #33434A)">
+                            <button class="btn4">Concept Pitch X UI Design
+                            </button>   
+                        </div>
+                        <div class="project-detail4">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <h3>Brief</h3>
+                                        <p>4.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        
+                                        <hr>
+                                        <div class="img">
+                                            <img src="img/coffeeM/0.jpg">
+                                            <img src="img/coffeeM/1.jpg">
+                                            <img src="img/coffeeM/2.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="slider">
+                    <div class="slider-wrap">
+                        <div class="single-project" style="background:linear-gradient(20deg, #F6A18F, #F27464 25%, #9B4740)">
+                            <button class="btn5">Wee X Product Concept Design
+                            </button>   
+                        </div>
+                        <div class="project-detail5">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <h3>Brief</h3>
+                                        <p>5.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        
+                                        <hr>
+                                        <div class="img">
+                                            <img src="img/wee/1.jpg">
+                                            <img src="img/wee/2.jpg">
+                                            <img src="img/wee/3.jpg">
+                                            <img src="img/wee/4.jpg">
+                                            <img src="img/wee/5.jpg">
+                                            <img src="img/wee/6.jpg">
+                                            <img src="img/wee/7.jpg">
+                                            <img src="img/wee/8.jpg">
+                                            <img src="img/wee/9.jpg">
+                                            <!-- <img src="img/wee/10.jpg"> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+<script>
+    $(document).ready(function(){
+        $('.banner').unslider({
+            speed: 500,               //  The speed to animate each slide (in milliseconds)
+            delay: false,              //  The delay between slide animations (in milliseconds)
+            // complete: function() {},  //  A function that gets called after every slide animation
+            keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+            dots: true, 
+            fade: true,              //  Display dot navigation
+            fluid: true,              //  Support responsive design. May break non-responsive designs
+        });
 
         
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+        $('.btn1').click(function(){
+            $('.single-project').css('height','300px');
+            $('.project-detail1').css('top','0%');
+            $('.type-bio').css('display','none');
+            $('.dots').css('display','none');
+        });
+
+        $('.btn2').click(function(){
+            $('.single-project').css('height','300px');
+            $('.project-detail2').css('top','0%');
+            $('.type-bio').css('display','none');
+            $('.dots').css('display','none');
+        });
+
+        $('.btn3').click(function(){
+            $('.single-project').css('height','300px');
+            $('.project-detail3').css('top','0%');
+            $('.type-bio').css('display','none');
+            $('.dots').css('display','none');
+        });
+
+        $('.btn4').click(function(){
+            $('.single-project').css('height','300px');
+            $('.project-detail4').css('top','0%');
+            $('.type-bio').css('display','none');
+            $('.dots').css('display','none');
+        });
+
+        $('.btn5').click(function(){
+            $('.single-project').css('height','300px');
+            $('.project-detail5').css('top','0%');
+            $('.type-bio').css('display','none');
+            $('.dots').css('display','none');
+        });
+
+     });
+
+    $( document ).on('scroll', function(){
+    
+    });
+</script>
+    </script>
+</body>
 </html>
