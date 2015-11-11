@@ -27,8 +27,8 @@
         margin: 0px;
     }
     .banner li{
-    padding: 0px;
-    margin: 0px;
+        padding: 0px;
+        margin: 0px;
     }
     .banner ul li {
         float:left;
@@ -43,11 +43,12 @@
         background-position-y: -75px;
     }
     .dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20px;
-  text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        text-align: center;
+        z-index: 9999;
 }
 
 .dots li {
@@ -63,6 +64,7 @@
   -webkit-transition: background .5s, opacity .5s;
   -moz-transition: background .5s, opacity .5s;
   transition: background .5s, opacity .5s;
+  z-index: 9999
 }
 
 .dots li.active {
@@ -102,10 +104,12 @@
     background-color: rgba(0,0,0,0);
     position: fixed;
     overflow: scroll;
+    z-index: 1000;
 }
 
 *.wrap{
     margin: 21% auto;
+    padding-top: 40px;
     width: 100%;
     background: #fff;
 }
@@ -114,7 +118,7 @@
     width: 60%;
     max-width: 1024px;
     margin: 0 auto;
-    padding-top: 30px;
+    
 }
 
 *.img{
@@ -141,40 +145,95 @@
     margin: 5px;
 }
 
+.btnX{
+    border : 1px solid lightgrey;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    display: none;
+    color: lightgrey;
+    padding: 10px 15px;
+    font: 20px 'comic sans', sans-serif;
+    margin: 0 auto 30px;
+}
+
+.btnX:hover{
+    background-color: rgba(0,0,0, 0.1)
+}
+
+* button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .title{
     width: 540px;
-    height: 320px;
+    height: auto;
     margin: 0 auto;
     color: #fff;
-    font-size:30px; 
+    font-size: 20px; 
     letter-spacing:0; 
     padding-top:250px;
     position: absolute;
+}
+
+.title span{
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
 }
 
+a:visited{
+    color: #fff;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.nav-menu {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    font: 20px;
+}
+
+.nav-menu li{
+     margin-right: 20px;
+    list-style: none;
+    color: #fff;
+}
+
 </style>
 </head>
 <body>
-
+    <div class="nav-menu">
+        <ul class="">
+            <a href="#home"><li style="position:fixed;left:3%;"><h3 style="margin:0;">MIN KIM</h3></li></a>
+            <div class="right-nav" style="position:fixed;right:1%;">
+                <li>CONTACT</li>
+            </div>
+        </ul>
+    </div>
     <div class="banner">
         <ul>
             <li>
                 <div id="slider">
                     <div class="slider-wrap">
                         <div class="single-project"  style="background-image:url('img/me.jpg')">
-                            <div class="title">Hi<br> I'm Min, a <span class="element" style="font-size: 30px;"></span>   
-                            <p style="margin:0; font-size:25px; letter-spacing:0;">based out of Toronto, Canada </p>
+                            <div class="title">Hi<br> I'm Min, a <span class="element" style="font-size: 20px;"></span>   
+                            <p style="margin:0; font-size:20px; letter-spacing:0;">based out of Toronto, Canada </p>
                             </div>
-                            <div class="">
-                                <button class="btn" href="https://www.linkedin.com/profile/view?id=262046646&trk=nav_responsive_tab_profile_pic">Linkedin</button>
-                                <button class="btn" href="https://dribbble.com/thisisminkim">Dribbble</button>
+                            
+                                <button class="btn" >Linkedin</button>
+                                <button class="btn" onclick="location.href=https://dribbble.com/thisisminkim">Dribbble</button>
                                 <button class="btn" href="https://twitter.com/lovelybeerlover">Twitter</button>
                                 <button class="btn" href="https://twitter.com/lovelybeerlover">Email Me</button>
-                            </div> 
+                            
                         </div>
                     </div>
                 </div>
@@ -182,13 +241,14 @@ a {
             <li>
                 <div id="slider">
                     <div class="slider-wrap">
-                        <div class="single-project" style="background:linear-gradient(20deg,#efefef, #589ced 25%, #0b386e)">
+                        <div class="single-project" style="background:linear-gradient(20deg,#90bdf3, #589ced 25%, #0b386e)">
                             <button class="btn2">PostBeyond X Visual Design
-                            </button>   
+                            </button> <br>  
                         </div>
                         <div class="project-detail2">
                                 <div class="wrap">
-                                    <div class="inner"><center><h2>Visual Designer | April - October 2015 | <a href="http://postbeyond.com">PostBeyond</a></h2></center>
+                                    <button class="btnX">X</button>
+                                    <div class="inner"><center><h3>Visual Designer | April - October 2015 | Visual Identity</h3></center>
                                         <h3 style="margin-top:70px;">
                                         Brief</h3>
                                         <p>As a Visual Designer, I was tasked with creating graphic assets such as icons and banners and creating white papers and case studies for our own marketing team and customer success team.</p>
@@ -211,6 +271,7 @@ a {
                         </div>
                         <div class="project-detail3">
                                 <div class="wrap">
+                                    <button class="btnX">X</button>
                                     <div class="inner">
                                         <center><h2>UI/UX Designer | November 2015 | <a href="http://postbeyond.com">PostBeyond</a></h2></center>
                                         <h3 style="margin-top:70px;">Brief</h3>
@@ -237,6 +298,7 @@ a {
                         </div>
                         <div class="project-detail4">
                                 <div class="wrap">
+                                    <button class="btnX">X</button>
                                     <div class="inner">
                                         <center><h2>UI/UX Designer | May 2015 | Concept Pitch</h2></center>
                                         <h3 style="margin-top:70px;">
@@ -266,6 +328,7 @@ a {
                         </div>
                         <div class="project-detail5">
                                 <div class="wrap">
+                                    <button class="btnX">X</button>
                                     <div class="inner">
                                         <center><h2>Product Designer | Jan - April 2014 | School Project</h2></center>
                                         <h3 style="margin-top:70px;">Brief</h3>
@@ -307,6 +370,7 @@ a {
                         </div>
                         <div class="project-detail1">
                                 <div class="wrap">
+                                <button class="btnX">X</button>
                                     <div class="inner">
                                         <center><h2>Front End Developer | Oct 2014 - Jan 2014 | GBC + ClaudHound</h2></center>
                                         <h3 style="margin-top:70px;">
@@ -368,41 +432,51 @@ a {
         });
 
         
-    
+        $('.btnX').click(function(){
+            $('.single-project').css('height','100vh');
+            $('.project-detail1').css('top','100%');
+            $('.project-detail2').css('top','100%');
+            $('.project-detail3').css('top','100%');
+            $('.project-detail4').css('top','100%');
+            $('.project-detail5').css('top','100%');
+            $('.project-detail6').css('top','100%');
+            $('.dots').css('display','block');
+            $('.btnX').css('display','none');
+        });
 
         $('.btn1').click(function(){
             $('.single-project').css('height','300px');
             $('.project-detail1').css('top','0%');
-            $('.type-bio').css('display','none');
             $('.dots').css('display','none');
+            $('.btnX').css('display','block');
         });
 
         $('.btn2').click(function(){
             $('.single-project').css('height','300px');
             $('.project-detail2').css('top','0%');
-            $('.type-bio').css('display','none');
             $('.dots').css('display','none');
+            $('.btnX').css('display','block');
         });
 
         $('.btn3').click(function(){
             $('.single-project').css('height','300px');
             $('.project-detail3').css('top','0%');
-            $('.type-bio').css('display','none');
             $('.dots').css('display','none');
+            $('.btnX').css('display','block');
         });
 
         $('.btn4').click(function(){
             $('.single-project').css('height','300px');
             $('.project-detail4').css('top','0%');
-            $('.type-bio').css('display','none');
             $('.dots').css('display','none');
+            $('.btnX').css('display','block');
         });
 
         $('.btn5').click(function(){
             $('.single-project').css('height','300px');
             $('.project-detail5').css('top','0%');
-            $('.type-bio').css('display','none');
             $('.dots').css('display','none');
+            $('.btnX').css('display','block');
         });
 
      });
