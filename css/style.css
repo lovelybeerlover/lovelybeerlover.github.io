@@ -220,7 +220,7 @@ Main Components
 .projects-container .cd-single-project.is-full-width::after {
   height: 100vh;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
 .info-wrap h2{
   font-weight: 700;
   font-size: 24px;
@@ -327,7 +327,7 @@ Main Components
     transition: width 0.4s 0s, z-index 0s 0s, left 0.4s 0s;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
 /*  .projects-container .cd-single-project:hover {
     -webkit-transform: scale(0.99);
     -moz-transform: scale(0.99);
@@ -402,7 +402,7 @@ Main Components
   display: none;
   opacity: .6;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
   .cd-title {
     top: 80vh;
     width: 20vw;
@@ -434,7 +434,7 @@ Main Components
     display: block;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
   .cd-title h2 {
     font-size: 1.6rem;
   }
@@ -463,7 +463,7 @@ Main Components
   margin: 0 auto;
   line-height: 2;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
   .cd-project-info {
     position: relative;
     z-index: 1;
@@ -498,7 +498,7 @@ Main Components
   transform: scale(0);
   background-color:rgba(0,0,0,0.25);
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
   .projects-container .cd-close {
     background-image: url("../img/cd-icon-close-desktop.svg");
   }
@@ -515,7 +515,7 @@ Main Components
   transform: translateX(-50%) scale(0);
   background: url("../img/cd-icon-arrow-mobile.svg") no-repeat center center;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
   .projects-container .cd-scroll {
     background-image: url("../img/cd-icon-arrow-desktop.svg");
   }
