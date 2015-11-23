@@ -92,6 +92,7 @@ Main Components
   position: relative;
   text-align: center;
   z-index: 1000;
+  line-height: 1.8;
 }
 
 .title span{
