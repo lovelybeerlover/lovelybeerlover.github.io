@@ -1,8 +1,19 @@
 jQuery(document).ready(function($){
 	$(".element").typed({
-            strings: ["UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer"],
-            typeSpeed: 70
+        strings: ["UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer","UI/UX Designer", "Visual Designer", "Web Developer"],
+        typeSpeed: 70
     });
+
+    // if ($('#btn-contact').click()){
+    // 	$(".modal-full-window").addClass("open");
+    // }
+    // else{
+    // 	$(".modal-full-window").removeClass("open");
+    // }
+    $('#btn-contact').on('click', function(){
+		$(".modal-full-window").addClass("open");
+    });
+
 
 	//check if background-images have been loaded and show list items
 	$('.cd-single-project').bgLoaded({
