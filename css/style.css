@@ -106,6 +106,7 @@ Main Components
   font: 20px 'open sans', sans-serif;
   width: 80%;
   margin: 0 auto;
+  line-height: 1.8;
 }
 
 .projects-container {
@@ -253,6 +254,8 @@ Main Components
     -moz-transition: width 0s;
     transition: width 0s;
   }
+
+
 
   .projects-container .cd-single-project:first-of-type::before {
     content: 'img/img-1-large.jpg';
