@@ -363,7 +363,7 @@ Main Components
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 12.5vh;
+  top: 6.25vh;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -384,9 +384,9 @@ Main Components
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-title h2 {
-  font-size: 2.5rem;
+  font-size: 20px;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 600;
 }
 .cd-title p {
   font-size: 1.4rem;
