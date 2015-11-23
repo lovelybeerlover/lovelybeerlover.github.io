@@ -496,7 +496,7 @@ Main Components
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
-  background:rgba(0,0,0,0.25);
+  background-color:rgba(0,0,0,0.25);
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
