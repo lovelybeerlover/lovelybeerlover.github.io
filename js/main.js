@@ -23,6 +23,7 @@ jQuery(document).ready(function($){
 	//close project
 	$('.projects-container .cd-close').on('click', function(){
 		toggleProject($('.is-full-width'), $('.projects-container'), false);
+		$('.title').css('display','block');
 	});
 
 	//scroll to project info
