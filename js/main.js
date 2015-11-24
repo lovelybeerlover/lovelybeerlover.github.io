@@ -14,6 +14,12 @@ jQuery(document).ready(function($){
 		$(".modal-full-window").addClass("open");
     });
 
+    //contact modal close
+    $('.modal-full-window .cd-close').on('click', function(){
+		toggleProject($('.is-full-width'), $('.modal-full-window'), false);
+		$('.title').css('display','block');
+	});
+
 
 	//check if background-images have been loaded and show list items
 	$('.cd-single-project').bgLoaded({
@@ -28,6 +34,7 @@ jQuery(document).ready(function($){
 			toggle = !selectedProject.hasClass('is-full-width');
 		if(toggle) toggleProject($(this), $('.projects-container'), toggle);
 		$('.title').css('display','none');
+		$('#btn-contact').css('display','none');
 
 	});
 
@@ -35,6 +42,7 @@ jQuery(document).ready(function($){
 	$('.projects-container .cd-close').on('click', function(){
 		toggleProject($('.is-full-width'), $('.projects-container'), false);
 		$('.title').css('display','block');
+		$('#btn-contact').css('display','block');
 	});
 
 	//scroll to project info

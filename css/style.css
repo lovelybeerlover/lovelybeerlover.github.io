@@ -68,13 +68,31 @@ img{
 .nav-bar{
   position: fixed;
   color: #fff;
-  top: 0;
+  top: 30px;
   z-index: 1001;
+  width: 100%;
+  font-size: 20px;
 }
 
 .nav-bar li{
   list-style: none;
   float: left;
+}
+
+#mainlogo{
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+}
+
+#btn-contact{
+  cursor: pointer;
+  right: 3%;
+  position: absolute;
+  display: block;
+  -webkit-transition: -webkit-transform 1s 0s, display 0s 1s;
+  -moz-transition: -moz-transform 1s 0s, display 0s 1s;
+  transition: transform 1s 0s, display 0s 1s;
 }
 
 
@@ -471,6 +489,7 @@ Main Components
   }
 }
 
+.modal-full-width .cd-close,
 .projects-container .cd-close,
 .projects-container .cd-scroll {
   display: block;
@@ -487,10 +506,11 @@ Main Components
   transition: transform 1s 0s, visibility 0s 1s;
 }
 
+.modal-full-width .cd-close,
 .projects-container .cd-close {
   position: fixed;
   top: 30px;
-  right: 5%;
+  right: 2%;
   background: url("../img/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -500,6 +520,7 @@ Main Components
   background-color:rgba(0,0,0,0.25);
 }
 @media only screen and (min-width: 1024px) {
+  .modal-full-width .cd-close,
   .projects-container .cd-close {
     background-image: url("../img/cd-icon-close-desktop.svg");
   }
@@ -522,6 +543,7 @@ Main Components
   }
 }
 
+.modal-full-width .cd-close,
 .project-is-open .cd-close,
 .project-is-open .cd-scroll {
   visibility: visible;
