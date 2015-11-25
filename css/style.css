@@ -80,9 +80,12 @@ img{
 }
 
 #mainlogo{
+  /*background: url('../img/logo-w.png');*/
   cursor: pointer;
   position: absolute;
   left: 3%;
+  width: 100px;
+  height: 30px;
 }
 
 #btn-contact{
