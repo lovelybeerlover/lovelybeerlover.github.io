@@ -61,7 +61,8 @@ img{
   opacity: 1;
   width: 100vw;
   height: 100vh;
-  background: url('../img/me.jpg');
+  background:url('../img/me.jpg');
+  background-size: cover;
   position: absolute;
   z-index: 1002;
 }
