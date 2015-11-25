@@ -16,8 +16,7 @@ jQuery(document).ready(function($){
 
     //contact modal close
     $('.cd-close').on('click', function(){
-		$('.modal-full-window').toggle();
-		$(".modal-full-window").addClass("open");
+		$(".modal-full-window").removeClass("open");
 	});
 
 	//check if background-images have been loaded and show list items
@@ -34,6 +33,7 @@ jQuery(document).ready(function($){
 		if(toggle) toggleProject($(this), $('.projects-container'), toggle);
 		$('.title').css('display','none');
 		$('#btn-contact').css('display','none');
+		$('#mainlogo').css('display','none');
 
 	});
 
@@ -42,6 +42,7 @@ jQuery(document).ready(function($){
 		toggleProject($('.is-full-width'), $('.projects-container'), false);
 		$('.title').css('display','block');
 		$('#btn-contact').css('display','block');
+		$('#mainlogo').css('display','block');
 	});
 
 	//scroll to project info
