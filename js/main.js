@@ -16,10 +16,9 @@ jQuery(document).ready(function($){
 
     //contact modal close
     $('.modal-full-window .cd-close').on('click', function(){
-		toggleProject($('.is-full-width'), $('.modal-full-window'), false);
-		$('.title').css('display','block');
+		$('.modal-full-window').toggle();
+		$(".modal-full-window").addClass("open");
 	});
-
 
 	//check if background-images have been loaded and show list items
 	$('.cd-single-project').bgLoaded({
