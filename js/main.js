@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
     });
 
     //contact modal close
-    $('.modal-full-window .cd-close').on('click', function(){
+    $('.cd-close').on('click', function(){
 		$('.modal-full-window').toggle();
 		$(".modal-full-window").addClass("open");
 	});

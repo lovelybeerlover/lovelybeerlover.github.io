@@ -496,7 +496,7 @@ Main Components
   }
 }
 
-.modal-full-width .cd-close,
+.cd-close,
 .projects-container .cd-close,
 .projects-container .cd-scroll {
   display: block;
@@ -513,7 +513,7 @@ Main Components
   transition: transform 1s 0s, visibility 0s 1s;
 }
 
-.modal-full-width .cd-close,
+.cd-close,
 .projects-container .cd-close {
   position: fixed;
   top: 30px;
@@ -527,7 +527,7 @@ Main Components
   background-color:rgba(0,0,0,0.25);
 }
 @media only screen and (min-width: 1024px) {
-  .modal-full-width .cd-close,
+  .cd-close,
   .projects-container .cd-close {
     background-image: url("../img/cd-icon-close-desktop.svg");
   }
@@ -550,7 +550,7 @@ Main Components
   }
 }
 
-.modal-full-width .cd-close,
+.cd-close,
 .project-is-open .cd-close,
 .project-is-open .cd-scroll {
   visibility: visible;
