@@ -17,7 +17,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  background:url('../img/me.jpg');
+  /*background:url('../img/me.jpg');*/
   background-size: cover;
   background-color: #101524;
 }
@@ -58,7 +58,7 @@ img{
   opacity: 1;
   width: 100vw;
   height: 100vh;
-  background-color: grey;
+  background: url('../img/me.jpg');
   position: absolute;
   z-index: 1002;
 }
@@ -102,10 +102,10 @@ Main Components
 
 -------------------------------- */
 .title{
-  width: 90%;
+  width: auto;
+  left: 3%;
   height: auto;
   top: 20vh;
-  margin: 0 auto;
   color: #fff;
   font-size: 20px; 
   position: relative;
@@ -253,9 +253,9 @@ Main Components
 .title{
   width: 540px;
   height: auto;
-  margin: 0 auto;
   font-size: 20px; 
   top: 40vh;
+  text-align: left;
 }
   .projects-container::before {
     /* never visible - this is used in jQuery to check the current MQ */
