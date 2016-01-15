@@ -4,6 +4,30 @@ jQuery(document).ready(function($){
         typeSpeed: 70
     });
 
+    var intro = $('.cd-intro-block'),
+		projectsContainer = $('.cd-projects-wrapper'),
+		projectsSlider = projectsContainer.children('.cd-slider'),
+		singleProjectContent = $('.cd-project-content'),
+		sliderNav = $('.cd-slider-navigation');
+
+	intro.on('click', 'a[data-action="show-projects"]', function(event) {
+		event.preventDefault();
+		intro.addClass('projects-visible');
+		projectsContainer.addClass('projects-visible');
+		//animate single project - entrance animation
+		setTimeout(function(){
+			showProjectPreview(projectsSlider.children('li').eq(0));
+		}, 200);
+	});
+
+	intro.on('click', function(event) {
+		//projects slider is visible - hide slider and show the intro panel
+		if( intro.hasClass('projects-visible') && !$(event.target).is('a[data-action="show-projects"]') ) {
+			intro.removeClass('projects-visible');
+			projectsContainer.removeClass('projects-visible');
+		}
+	});
+
     // if ($('#btn-contact').click()){
     // 	$(".modal-full-window").addClass("open");
     // }
@@ -34,15 +58,17 @@ jQuery(document).ready(function($){
 		$('.title').css('display','none');
 		$('#btn-contact').css('display','none');
 		$('#mainlogo').css('display','none');
+		intro.addClass('projects-visible-2');
 
 	});
-
+	
 	//close project
 	$('.projects-container .cd-close').on('click', function(){
 		toggleProject($('.is-full-width'), $('.projects-container'), false);
 		$('.title').css('display','block');
 		$('#btn-contact').css('display','block');
 		$('#mainlogo').css('display','block');
+		intro.removeClass('projects-visible-2');
 	});
 
 	//scroll to project info

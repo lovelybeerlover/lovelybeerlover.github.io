@@ -61,7 +61,8 @@ img{
   opacity: 1;
   width: 100vw;
   height: 100%;
-  background:url('../img/me.jpg');
+  background-color: #757F9A;
+  /*background:url('../img/me.jpg');*/
   background-size: cover;
   position: absolute;
   z-index: 1002;
@@ -72,7 +73,7 @@ img{
 .nav-bar{
   position: fixed;
   color: #fff;
-  top: 30px;
+  top: 20px;
   z-index: 1001;
   width: 100%;
   font-size: 20px;
@@ -95,11 +96,107 @@ img{
 #btn-contact{
   cursor: pointer;
   right: 3%;
+  top: 5px;
   position: absolute;
   display: block;
   -webkit-transition: -webkit-transform 1s 0s, display 0s 1s;
   -moz-transition: -moz-transform 1s 0s, display 0s 1s;
   transition: transform 1s 0s, display 0s 1s;
+}
+
+/* -------------------------------- 
+
+Intro page
+
+-------------------------------- */
+.cd-intro-block {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(140deg, #757F9A , #D7DDE8);
+  /* used to vertical align its content */
+  display: table;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
+  -moz-transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
+  transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
+}
+.cd-intro-block::after {
+  /* arrow icon visible when .cd-intro-block slides out */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  top: 95%;
+  height: 24px;
+  width: 24px;
+  background: url(../img/cd-arrow-back.svg) no-repeat center center;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cd-intro-block .content-wrapper {
+  /* vertical align the .cd-intro-block content */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.cd-intro-block h1 {
+  width: 90%;
+  margin: 0 auto .6em;
+  font-size: 2.4rem;
+  color: #ebebeb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-intro-block.projects-visible {
+  /* translate the .cd-intro-block element to reveal the projects slider */
+  -webkit-transform: translateY(-90%);
+  -moz-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  -o-transform: translateY(-90%);
+  transform: translateY(-90%);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.cd-intro-block.projects-visible:after {
+  /* show arrow icon */
+  opacity: 1;
+}
+@media only screen and (min-width: 900px) {
+  .cd-intro-block::after {
+    top: 97.5%;
+  }
+  .cd-intro-block h1 {
+    font-size: 4.4rem;
+    font-weight: 300;
+  }
+  .cd-intro-block.projects-visible {
+    -webkit-transform: translateY(-90%);
+    -moz-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    -o-transform: translateY(-90%);
+    transform: translateY(-90%);
+  }
+
+  .cd-intro-block.projects-visible-2 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
 
 
@@ -109,16 +206,15 @@ Main Components
 
 -------------------------------- */
 .title{
-  width: auto;
-  left: 3%;
+  width: 320px;
+  /*left: 3%;*/
   height: auto;
-  top: 20vh;
   color: #fff;
   font-size: 20px; 
-  position: relative;
   text-align: center;
   z-index: 1000;
   line-height: 1.8;
+  margin: 0 auto;
 }
 
 .title span{
@@ -138,9 +234,9 @@ Main Components
 }
 
 .projects-container {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
-  position: relative;
+  /*position: relative;*/
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -262,7 +358,8 @@ Main Components
   height: auto;
   font-size: 20px; 
   top: 40vh;
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
 }
   .projects-container::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -430,7 +527,7 @@ Main Components
 }
 @media only screen and (min-width: 800px) {
   .cd-title {
-    top: 80vh;
+    top: 50vh;
     width: 20vw;
     opacity: 0;
     -webkit-transform: translateY(-50%) translateX(-20px);
