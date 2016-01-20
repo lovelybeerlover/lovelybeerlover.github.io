@@ -159,8 +159,8 @@ Intro page
 }
 .cd-intro-block h1 {
   width: 90%;
-  margin: 0 auto .6em;
-  font-size: 2.4rem;
+  margin: 0 auto 10px;
+  font-size:18px;
   color: #ebebeb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -184,7 +184,7 @@ Intro page
     top: 97.5%;
   }
   .cd-intro-block h1 {
-    font-size: 4.4rem;
+    font-size: 18px;
     font-weight: 300;
   }
   .cd-intro-block.projects-visible {
@@ -522,7 +522,7 @@ Main Components
   font-weight: 600;
 }
 .cd-title p {
-  font-size: 1.4rem;
+  font-size: 12px;
   font-family: "Merriweather", serif;
   font-style: italic;
   line-height: 1.2;
@@ -569,7 +569,7 @@ Main Components
 }
 @media only screen and (min-width: 1024px) {
   .cd-title h2 {
-    font-size: 1.3rem;
+    font-size: 18px;
   }
 }
 
