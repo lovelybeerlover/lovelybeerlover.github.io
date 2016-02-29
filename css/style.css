@@ -167,11 +167,11 @@ Intro page
 }
 .cd-intro-block.projects-visible {
   /* translate the .cd-intro-block element to reveal the projects slider */
-  -webkit-transform: translateY(-90%);
-  -moz-transform: translateY(-90%);
-  -ms-transform: translateY(-90%);
-  -o-transform: translateY(-90%);
-  transform: translateY(-90%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
