@@ -43,6 +43,10 @@ jQuery(document).ready(function($){
 		$(".modal-full-window").removeClass("open");
 	});
 
+    $('.mylogo').on('click', function(){
+		$(".cd-intro-block projects-visible").removeClass("projects-visible");
+	});
+
 	//check if background-images have been loaded and show list items
 	$('.cd-single-project').bgLoaded({
 	  	afterLoaded : function(){
