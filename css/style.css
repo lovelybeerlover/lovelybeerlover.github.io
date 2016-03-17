@@ -308,7 +308,7 @@ Main Components
   content: 'img/img-3-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
-  top: 62vh;
+  top: 66vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
   background-image: url("../img/img-4-small.jpg");
@@ -317,7 +317,7 @@ Main Components
   content: 'img/img-4-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(5) {
-  top: 80vh;
+  top: 84vh;
 }
 .projects-container .cd-single-project:nth-of-type(5)::after {
   background-image: url("../img/img-5-small.jpg");
