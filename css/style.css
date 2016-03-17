@@ -274,7 +274,7 @@ Main Components
   position: absolute;
   top: 0;
   left: 0;
-  height: 12vh;
+  height: 100%;
   width: 100%;
   background-image: url("../img/img-1-small.jpg");
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ Main Components
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 1.25vh;
+  top: 9vh;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
