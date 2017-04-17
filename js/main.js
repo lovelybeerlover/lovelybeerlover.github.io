@@ -75,6 +75,17 @@ jQuery(document).ready(function($){
 		intro.removeClass('projects-visible-2');
 	});
 
+	/*-------------------------------------------
+Instagram Feed
+---------------------------------------------*/
+ var userFeed = new Instafeed({
+  get: 'user',
+  userId: 'lovelybeerlover',
+  accessToken: 'YOUR_ACCESS_TOKEN'
+});
+    userFeed.run();
+
+
 	//scroll to project info
 	$('.projects-container .cd-scroll').on('click', function(){
 		$('.projects-container').animate({'scrollTop':$(window).height()}, 500); 
@@ -166,3 +177,5 @@ jQuery(document).ready(function($){
 		});
 	};
 })(jQuery);
+
+
