@@ -88,6 +88,9 @@ function Website() {
 		setTimeout(function(){
 			$('header').fadeIn();							
 		},500);
+    setTimeout(function(){
+      $('.content').fadeIn();             
+    },500);
 }
 
 
@@ -98,9 +101,7 @@ Init and check list scripts
 function CheckScripts() {
 
   $(document).ready(function(){
-    preloaderCheck();
     Typewriting();
-    sidebarhero();
   });
 
 }
@@ -168,10 +169,10 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Dribbble", "LinkedIn", "Instagram","Facebook"],
+            strings: ["..."],
             typeSpeed: 200,
             backDelay: 500,
-            loop: true,
+            loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
@@ -182,29 +183,6 @@ $(document).ready(function(){
 }
 
 
-/*-------------------------------------------
-Amazing Fade with scroll Sidebar
----------------------------------------------*/
-
-function sidebarhero() {
-
-  if($("#hero").length) {
-    var fadeStart=100,fadeUntil=800,fading = $('#hero');
-
-    $(window).bind('scroll', function(){
-        var offset = $(document).scrollTop()
-            ,opacity=0
-        ;
-        if( offset<=fadeStart ){
-            opacity=1;
-        }else if( offset<=fadeUntil ){
-            opacity=1-offset/fadeUntil;
-        }
-        fading.css('opacity',opacity);
-    });
-  } 
-}
-
 
 /*-------------------------------------------
 Open Check Scription
@@ -214,18 +192,6 @@ function OpenCheck() {
     setTimeout(function() {
         hidePreloader();
     }, 1000);
-}
-
-
-/*-------------------------------------------
-Check Preloader
----------------------------------------------*/
-
-function preloaderCheck() {
-    showPreloader();
-    $(window).load(function() {
-        hidePreloader();
-    });
 }
 
 /*-------------------------------------------
@@ -259,17 +225,4 @@ $("#projects").click(function() {
 
 
 })//End
-
-/*-------------------------------------------
-Instagram Feed
----------------------------------------------*/
- var userFeed = new Instafeed({
-  get: 'user',
-  userId: '79393',
-  accessToken: '793932.1677ed0.bc2d4097f3704115a0011b39efd8252b',
-  template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-});
-    userFeed.run();
-
-
 

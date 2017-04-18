@@ -18,55 +18,19 @@
   text-shadow: none !important;
 }
 
-.nav-right{
-  position: fixed;
-  right: 3%;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+.text-intro a:hover {
+  border-bottom: 1px solid #c3c3c3;
 }
 
-.nav-right span{
-  /*background-color: #fff;*/
-  text-shadow: #fff 0px 0px 5px;
+.text-intro a:visited {
+  color: #8d8d8d !important;
 }
 
-.nav-right span:hover{
-  border-bottom:1px solid #333;
-}
-
-
-
-
-
-
-/* icons */
-.social-icons, .social-icons a{
-  color: #333;
-  font-size: 15px;
-  margin: 20px 8px 0 0;
-}
-
-/*about*/
-#profile-column {
-  width: 36% !important;
-  margin: 30px 3% 0 0;
-}
-
-#profile-column p{
-  width: 90% !important;
-}
-
-.profile-pic img{
-  width: 100%;
-
-}
-
-
-
-
-/*project 2*/
-.three-imgs{
-  margin: 0 auto;
-  float: left;
-  padding: 15px;
+.text-intro {
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  display: block;
 }
