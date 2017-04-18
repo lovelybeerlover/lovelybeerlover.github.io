@@ -194,33 +194,8 @@ function OpenCheck() {
     }, 1000);
 }
 
-/*-------------------------------------------
-Functions Show / Hide Preloader
----------------------------------------------*/
-
-function showPreloader() {
-  $(".preloader").fadeIn("slow");
-}
-
-function hidePreloader() {
-  $(".preloader").delay(2000).fadeOut("slow");
-}
 
 
-/*-------------------------------------------
-Anchor scroll down
----------------------------------------------*/
-
-function scrollToAnchor(aid){
-    var aTag = $("." + aid);
-    console.log(aTag.offset())
-    console.log(aTag)
-    $('html,body').animate({scrollTop: aTag.offset().top-72},'slow');
-}
-
-$("#projects").click(function() {
-   scrollToAnchor('anchor-project');
-});
 
 })//End
 
