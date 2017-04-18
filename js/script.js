@@ -222,7 +222,5 @@ $("#projects").click(function() {
    scrollToAnchor('anchor-project');
 });
 
-
-
 })//End
 
