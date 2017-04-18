@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+
+
+/* Top nav*/
+.top-nav{
+  position: fixed;
+  /*background-color: #fff;*/
+  /*border-bottom: 1px solid #f1f1f1;*/
+  width: 100%;
+  height: 72px;
+  top: 0;
+  z-index: 9999;
+  padding: 0 9%;
+}
+
+.logo a{
+  color: #333 !important;
+  text-shadow: none !important;
+}
+
+.nav-right{
+  position: fixed;
+  right: 3%;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-right span{
+  /*background-color: #fff;*/
+  text-shadow: #fff 0px 0px 5px;
+}
+
+.nav-right span:hover{
+  border-bottom:1px solid #333;
+}
+
+
+
+
+
+
+/* icons */
+.social-icons, .social-icons a{
+  color: #333;
+  font-size: 15px;
+  margin: 20px 8px 0 0;
+}
+
+/*about*/
+#profile-column {
+  width: 36% !important;
+  margin: 30px 3% 0 0;
+}
+
+#profile-column p{
+  width: 90% !important;
+}
+
+.profile-pic img{
+  width: 100%;
+
+}
+
+
+
+
+/*project 2*/
+.three-imgs{
+  margin: 0 auto;
+  float: left;
+  padding: 15px;
+}
