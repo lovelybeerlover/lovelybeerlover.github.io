@@ -144,8 +144,14 @@
     padding-right: 15px;
     padding-left: 15px;
   }
- 
 
+  .nav-right{
+    right: 0;
+  }
+
+  .three-imgs img{
+    width: 100%;
+  }
 
   /*
   **************************
@@ -165,6 +171,10 @@
 
   .grid-hover, li.grid-item, li.grid-item img{
     width:282px;
+  }
+
+  .grid-hover:hover{
+    width:284px;
   }
 
 }
@@ -217,8 +227,8 @@
     padding-left: 15px;
   }
  
-  .one-column, .two-column{
-    width:100%;
+  .one-column, .two-column, .two-imgs img, .three-imgs img{
+    width:100% ;
   }
   
   .contact-one, .contact-two, .contact-three{
@@ -304,7 +314,7 @@
     display:none;
   }
  
-  .one-column, .two-column{
+  .one-column, .two-column, .two-imgs img, .three-imgs img{
     width:100%;
   }
   
@@ -334,6 +344,34 @@
     font-size:33px; 
     line-height:50px;
   }
+
+
+ header li > a{
+    font-size: 10px;
+    padding-left: 0px;
+    padding-right: 20px;
+ }
+
+ header .logo > a{
+    font-size: 22px;
+ }
+
+ .nav-right{
+  right: 0;
+ }
+
+ .top-nav{
+  padding: 0 4%;
+ }
+
+ #profile-column{
+  width: inherit;
+ }
+
+.three-imgs img{
+  width: 100%;
+}
+
 
   /*
   **************************

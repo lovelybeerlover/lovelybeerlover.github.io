@@ -46,6 +46,10 @@ strong{
 
 }
 
+img{
+  /*vertical-align: top;*/
+}
+
 /*
 **************************
 PRELOADER
@@ -377,14 +381,20 @@ CONTENT
 }
 
 .content .text-intro h1{
-  font-family: 'Abril Fatface', cursive;
-
+  font-family: 'Abril Fatface', 'Georgia', serif;
   font-size:43px;
   width:40%;
   /*text-transform:uppercase;*/
   color:#000000;
   font-weight:400;
   line-height:70px;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  font-weight:600;
 }
 
 .content .text-intro p{
@@ -520,7 +530,7 @@ li.grid-item{
 
 .grid-hover{
   position: absolute;
-  width:360px;
+  width:361px;
   height: 100%;
   top:0;
   background: white;
@@ -538,9 +548,9 @@ li.grid-item{
 }
 
 .grid-hover h1{
-  font-size:23px;
+  font-size:18px;
   bottom:80px;
-  left:40px;
+  left:25px;
   position:absolute;
   text-transform:uppercase;
   color:#000000;
@@ -550,9 +560,9 @@ li.grid-item{
 }
 
 .grid-hover p{
-  font-size:13px;
+  font-size:12px;
   bottom:40px;
-  left:40px;
+  left:25px;
   position:absolute;
   color:#686868;
   letter-spacing:1px;

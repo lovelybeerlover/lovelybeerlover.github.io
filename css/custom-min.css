@@ -10,7 +10,7 @@
   height: 72px;
   top: 0;
   z-index: 9999;
-  padding: 0 9%;
+  padding: 0 3%;
 }
 
 .logo a{
@@ -18,19 +18,90 @@
   text-shadow: none !important;
 }
 
-.text-intro a:hover {
-  border-bottom: 1px solid #c3c3c3;
+.nav-right{
+  position: fixed;
+  right: 3%;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 
-.text-intro a:visited {
-  color: #8d8d8d !important;
+.nav-right span{
+  /*background-color: #fff;*/
+  text-shadow: #fff 0px 0px 5px;
 }
 
-.text-intro {
-  transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  display: block;
+.nav-right span:hover{
+  border-bottom:1px solid #333;
+}
+
+.portfolio-grid img, .portfolio-grid img:hover{
+  border: solid 1px #f4f4f4;
+}
+
+..typewrite span {
+  width: 100%;
+}
+
+
+
+
+/* icons */
+.social-icons, .social-icons a{
+  color: #333;
+  font-size: 15px;
+  margin: 20px 8px 0 0;
+}
+
+/*project overall*/
+.project-cover{
+  width: 100%;
+  height: 40%;
+}
+
+.project-p{
+  width: 100% !important;
+}
+
+
+
+
+/*about*/
+#profile-column {
+  width: 36%;
+  margin: 30px 3% 0 0;
+}
+
+#profile-column p{
+  width: 90% !important;
+}
+
+.profile-pic img{
+  width: 100%;
+
+}
+
+
+
+/*project img sizes*/
+.two-imgs img{
+  width: 48%
+}
+
+.two-imgs{
+  margin: 0 auto;
+  float: left;
+  padding: 15px;
+}
+
+
+
+.three-imgs img{
+  width: 33%
+}
+
+
+.three-imgs{
+  margin: 0 auto;
+  float: left;
+  padding: 15px;
 }

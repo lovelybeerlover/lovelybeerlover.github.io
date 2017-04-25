@@ -88,9 +88,6 @@ function Website() {
 		setTimeout(function(){
 			$('header').fadeIn();							
 		},500);
-    setTimeout(function(){
-      $('.content').fadeIn();             
-    },500);
 }
 
 
@@ -101,7 +98,9 @@ Init and check list scripts
 function CheckScripts() {
 
   $(document).ready(function(){
+    preloaderCheck();
     Typewriting();
+    sidebarhero();
   });
 
 }
@@ -169,8 +168,8 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["..."],
-            typeSpeed: 200,
+            strings: ["Product Designer", " Coding Enthusiast", "Gelato Connoisseur","Product Designer"],
+            typeSpeed: 100,
             backDelay: 500,
             loop: false,
             contentType: 'html', // or text
@@ -182,6 +181,29 @@ $(document).ready(function(){
 });
 }
 
+
+/*-------------------------------------------
+Amazing Fade with scroll Sidebar
+---------------------------------------------*/
+
+function sidebarhero() {
+
+  if($("#hero").length) {
+    var fadeStart=100,fadeUntil=800,fading = $('#hero');
+
+    $(window).bind('scroll', function(){
+        var offset = $(document).scrollTop()
+            ,opacity=0
+        ;
+        if( offset<=fadeStart ){
+            opacity=1;
+        }else if( offset<=fadeUntil ){
+            opacity=1-offset/fadeUntil;
+        }
+        fading.css('opacity',opacity);
+    });
+  } 
+}
 
 
 /*-------------------------------------------
@@ -195,7 +217,59 @@ function OpenCheck() {
 }
 
 
+/*-------------------------------------------
+Check Preloader
+---------------------------------------------*/
+
+function preloaderCheck() {
+    showPreloader();
+    $(window).load(function() {
+        hidePreloader();
+    });
+}
+
+/*-------------------------------------------
+Functions Show / Hide Preloader
+---------------------------------------------*/
+
+function showPreloader() {
+  $(".preloader").fadeIn("slow");
+}
+
+function hidePreloader() {
+  $(".preloader").delay(2000).fadeOut("slow");
+}
+
+
+/*-------------------------------------------
+Anchor scroll down
+---------------------------------------------*/
+
+function scrollToAnchor(aid){
+    var aTag = $("." + aid);
+    console.log(aTag.offset())
+    console.log(aTag)
+    $('html,body').animate({scrollTop: aTag.offset().top-60},'slow');
+}
+
+$("#projects").click(function() {
+   scrollToAnchor('anchor-project');
+});
+
 
 
 })//End
+
+/*-------------------------------------------
+Instagram Feed
+---------------------------------------------*/
+//  var userFeed = new Instafeed({
+//   get: 'user',
+//   userId: '79393',
+//   accessToken: '793932.1677ed0.bc2d4097f3704115a0011b39efd8252b',
+//   template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+// });
+//     userFeed.run();
+
+
 
