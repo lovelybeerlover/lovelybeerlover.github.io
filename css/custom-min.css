@@ -38,9 +38,15 @@
   border: solid 1px #f4f4f4;
 }
 
-..typewrite span {
+.typewrite span {
   width: 100%;
 }
+
+.typewrite {
+  width: 70% !important;
+}
+
+
 
 
 

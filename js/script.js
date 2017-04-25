@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Product Designer", " Coding Enthusiast", "Gelato Connoisseur","Product Designer"],
+            strings: ["Product Designer", " Coding Enthusiast", "Gelato Connoisseur","Product Designer based in Toronto."],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,
